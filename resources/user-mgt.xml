@@ -26,7 +26,7 @@
             <EveryOneRoleName>everyone</EveryOneRoleName> <!-- By default users in this role sees the registry root -->
             <Property name="isCascadeDeleteEnabled">true</Property>
  <Property name="initializeNewClaimManager">true</Property>
-            <Property name="dataSource">jdbc/WSO2CarbonDB</Property>
+            <Property name="dataSource">jdbc/WSO2UM_DB</Property>
         </Configuration>
 
 
@@ -69,7 +69,7 @@
 		     In case if user core cache domain is needed to identify uniquely set property
 		     <Property name="UserCoreCacheIdentifier">domain</Property>
  	    -->
-        <!--UserStoreManager class="org.wso2.carbon.user.core.ldap.ReadOnlyLDAPUserStoreManager">
+        <UserStoreManager class="org.wso2.carbon.user.core.ldap.ReadOnlyLDAPUserStoreManager">
             <Property name="TenantManager">org.wso2.carbon.user.core.tenant.CommonHybridLDAPTenantManager</Property>
             <Property name="ConnectionURL">ldap://localhost:10389</Property>
             <Property name="ConnectionName">uid=admin,ou=system</Property>
@@ -101,7 +101,7 @@
             <Property name="ReadTimeout"/>
             <Property name="RetryAttempts"/>
             <Property name="ReplaceEscapeCharactersAtUserLogin">true</Property>
-        </UserStoreManager-->
+        </UserStoreManager>
 	
 	    <!-- Active directory configuration is as follows.
 	         In case if user core cache domain is needed to identify uniquely set property
@@ -239,6 +239,7 @@
             <Property name="UsernameJavaScriptRegEx">^[\S]{5,30}$</Property>
             <Property name="RolenameJavaRegEx">^[\S]{5,30}$</Property>
             <Property name="RolenameJavaScriptRegEx">^[\S]{5,30}$</Property>
+            <Property name="SharedGroupEnabled">false</Property>
             <Property name="SCIMEnabled">false</Property>
             <Property name="DomainName">wso2.org</Property>
             <Property name="Description"/>
