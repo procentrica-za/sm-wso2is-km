@@ -20,7 +20,7 @@
 		<AddAdmin>true</AddAdmin>
             <AdminRole>admin</AdminRole>
             <AdminUser>
-              <UserName>admin@im.com</UserName>
+              <UserName>admin</UserName>
               <Password>admin</Password>
             </AdminUser>
             <EveryOneRoleName>everyone</EveryOneRoleName> <!-- By default users in this role sees the registry root -->
@@ -43,8 +43,8 @@
             <Property name="ReadOnly">false</Property>
             <Property name="ReadGroups">true</Property>
             <Property name="WriteGroups">true</Property>
-            <Property name="UsernameJavaRegEx">a-zA-Z0-9@._-{3,30}$</Property>
-            <Property name="UsernameJavaScriptRegEx">^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$</Property>
+            <Property name="UsernameJavaRegEx">^[\S]{3,30}$</Property>
+            <Property name="UsernameJavaScriptRegEx">^[\S]{3,30}$</Property>
             <Property name="UsernameJavaRegExViolationErrorMsg">Username pattern policy violated</Property>
             <Property name="PasswordJavaRegEx">^[\S]{5,30}$</Property>
             <Property name="PasswordJavaScriptRegEx">^[\S]{5,30}$</Property>
@@ -61,7 +61,7 @@
             <Property name="MaxRoleNameListLength">100</Property>
             <Property name="UserRolesCacheEnabled">true</Property>
             <Property name="UserNameUniqueAcrossTenants">false</Property>
-            <Property name="UsernameWithEmailJavaScriptRegEx">^[\S]{3,30}$</Property>
+            
             
         </UserStoreManager>
 	

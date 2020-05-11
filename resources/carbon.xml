@@ -351,7 +351,7 @@
     <!-- 
       Enable following config to allow Emails as usernames. 	
     -->	    	
-    <EnableEmailUserName>true</EnableEmailUserName>
+    <!--EnableEmailUserName>true</EnableEmailUserName-->
 
     <CryptoService>
   <Enabled>true</Enabled>
