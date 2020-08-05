@@ -12,7 +12,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:postgresql://sm-postgres-service:5432/gregdb</url>
+                    <url>jdbc:postgresql://localhost:5432/gregdb</url>
                     <username>postgres</username>
                     <password>postgres</password>
                     <driverClassName>org.postgresql.Driver</driverClassName>
@@ -32,7 +32,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:postgresql://sm-postgres-service:5432/wso2am_db?autoReconnect=true</url>
+                    <url>jdbc:postgresql://localhost:5432/wso2am_db?autoReconnect=true</url>
                     <username>postgres</username>
                     <password>postgres</password>
                     <driverClassName>org.postgresql.Driver</driverClassName>
@@ -52,7 +52,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:postgresql://sm-postgres-service:5432/gregdb?autoReconnect=true</url>
+                    <url>jdbc:postgresql://localhost:5432/gregdb?autoReconnect=true</url>
                     <username>postgres</username>
                     <password>postgres</password>
                     <driverClassName>org.postgresql.Driver</driverClassName>
@@ -72,7 +72,7 @@
             </jndiConfig>
             <definition type="RDBMS">
                 <configuration>
-                    <url>jdbc:postgresql://sm-postgres-service:5432/gregdb?autoReconnect=true</url>
+                    <url>jdbc:postgresql://localhost:5432/gregdb?autoReconnect=true</url>
                     <username>postgres</username>
                     <password>postgres</password>
                     <driverClassName>org.postgresql.Driver</driverClassName>
